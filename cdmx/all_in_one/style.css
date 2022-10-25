@@ -1,0 +1,128 @@
+body{
+  padding:0;
+  margin:0;
+}
+
+html{
+ height:100%;
+ min-height:100%;
+ }
+
+body {
+  /* Location of the image */
+  background-image: url(images/responsive_bg.jpg);
+  
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+  
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-mobile_bg.jpg) center center cover no-repeat fixed;
+   */
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+    background-image: url(images/responsive_mobile_bg.jpg);
+  }
+	}
+
+  *{
+    margin: 10px 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto",sans-serif;
+
+  }
+
+  .container{
+    width: 100%;
+    height: 132vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    position: fixed;
+  }
+
+  .login button{
+    width: 100%;
+    margin: 15px 0px;
+    padding: 10px;
+
+  }
+
+
+  .login .google{
+    display: block;
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: 150px 130px;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: #db4a39;
+  }
+
+  .login .facebook{
+    display: block;
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: 150px 130px;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: #3b5998;
+  }
+
+  .login .twitter{
+    display: block;
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: 150px 130px;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: #00acee;
+  }
+  
+  .container .google{
+    margin-bottom: -120px;
+  }
+
+  .container .facebook{
+    margin-bottom: -120px;
+  }
+
+  
+
+
+
+
+
+
